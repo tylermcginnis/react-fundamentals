@@ -10,7 +10,11 @@
     ]
   },
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "NODE_ENV='production' webpack",
+    "build-for-windows": "SET NODE_ENV='production' && webpack",
+    "firebase-init": "firebase login && firebase init",
+    "deploy": "npm run build && firebase deploy"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +33,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.0",
     "css-loader": "^1.0.0",
+    "firebase-tools": "^4.2.1",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.17.1",
