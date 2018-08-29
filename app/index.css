@@ -129,3 +129,16 @@ li {
   font-size: 30px;
   font-weight: 200;
 }
+
+.reset {
+  border: none;
+  background: transparent;
+  color: #d0021b;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
